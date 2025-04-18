@@ -44,7 +44,7 @@
     </div>
   </div>
   <!-- ***** Preloader End ***** -->
-
+  
   <!-- ***** Header Area Start ***** -->
   <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
     <div class="container">
@@ -375,6 +375,64 @@
       </div>
     </div>
   </footer>
+
+  <!-- Main Content -->
+<div class="container py-5">
+  <h1>Website Content</h1>
+  <p>Your website content goes here...</p>
+  <button class="btn btn-primary" onclick="showCookieConsent()">Show Cookie Consent</button>
+</div>
+
+<!-- Cookie Consent Banner -->
+<div class="cookie-consent" id="cookieConsent">
+  <div class="container">
+      <div class="row align-items-center">
+          <div class="col-lg-8">
+              <h5>We value your privacy</h5>
+              <p class="mb-3">
+                  We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze
+                  our traffic. By clicking "Accept All", you consent to our use of cookies.
+              </p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+              <button class="btn btn-outline-light me-2 mb-2" onclick="toggleSettings()">Cookie Settings</button>
+              <button class="btn btn-primary me-2 mb-2" onclick="acceptAll()">Accept All</button>
+              <button class="btn btn-secondary mb-2" onclick="acceptNecessary()">Accept Necessary Only</button>
+          </div>
+      </div>
+
+      <!-- Cookie Settings Panel -->
+      <div class="cookie-settings mt-3" id="cookieSettings">
+          <div class="row">
+              <div class="col-md-12">
+                  <h6 class="mb-3">Manage Cookie Preferences</h6>
+                  <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" id="necessaryCookies" checked disabled>
+                      <label class="form-check-label" for="necessaryCookies">
+                          <strong>Necessary Cookies</strong>
+                          <div class="text-muted small">These cookies are essential for the website to function properly.</div>
+                      </label>
+                  </div>
+                  <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" id="analyticsCookies">
+                      <label class="form-check-label" for="analyticsCookies">
+                          <strong>Analytics Cookies</strong>
+                          <div class="text-muted small">Help us understand how visitors interact with our website.</div>
+                      </label>
+                  </div>
+                  <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" id="marketingCookies">
+                      <label class="form-check-label" for="marketingCookies">
+                          <strong>Marketing Cookies</strong>
+                          <div class="text-muted small">Used to deliver personalized advertisements.</div>
+                      </label>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
   <!-- Scripts -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
